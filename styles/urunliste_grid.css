@@ -1,0 +1,53 @@
+/*grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.grid-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+}
+
+/* Orta boy ekran  */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Küçük ekran */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobil ekran */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

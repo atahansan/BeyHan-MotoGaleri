@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+input[type="text"], select {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+select {
+    height: 35px;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"] {
+    background-color: #17a2b8;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+}
+
+button[type="button"]:hover {
+    background-color: #138496;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[name="sil"] {
+    background-color: #dc3545;
+}
+
+button[name="sil"]:hover {
+    background-color: #c82333;
+}
+
+button[id^="save-"] {
+    background-color: #ffc107;
+    color: black;
+}
+
+button[id^="save-"]:hover {
+    background-color: #e0a800;
+}
+
+form {
+    margin: 0;
+}
+
+.alert {
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    color: #a70000;
+    padding: 10px;
+    border-radius: 4px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #888888;
+}
+
+

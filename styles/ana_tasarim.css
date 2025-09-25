@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #972a2a;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar * {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.navbar .menu a {
+    padding: 10px 15px;
+}
+
+.navbar .menu a:hover {
+    background-color: #b34343;
+    border-radius: 5px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    align-items: center;
+}
+.navbar .logo a {
+    padding-left: 10px;
+}
+
+.navbar .logo img {
+    width: 55px;
+    border-radius: 50%;
+}
+
+#toggle-cart-btn {
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#toggle-cart-btn:hover {
+    background-color: #d6d6d6;
+}
+
+/* SEPET (Mini Cart) */
+.mini-cart {
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 270px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none; /* Başlangıçta gizli */
+}
+
+.mini-cart h3 {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+}
+
+.mini-cart-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sepet Ürün Öğesi */
+.mini-cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 10px;
+}
+.mini-cart-item .cart-info p {
+    color: black;
+}
+
+.mini-cart-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.mini-cart-item .cart-info {
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.mini-cart-item .cart-info p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mini-cart-item .cart-info b {
+    font-size: 16px;
+    color: red;
+}
+
+.remove-from-cart {
+    align-self: flex-end;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #972a2a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer .social-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .menu a {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    #toggle-cart-btn {
+        align-self: flex-end;
+        margin: 10px 20px 0 0;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .logo a {
+        padding-left: 0;
+    }
+}
